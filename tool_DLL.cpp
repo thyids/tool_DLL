@@ -88,3 +88,84 @@ int hw(int a) {
 		return 0;
 	}
 }
+std::string gjdc(std::string s1, std::string s2) {
+	std::string s3 = "";
+	for (int i = 1; i <= (s1.size() + s2.size()); i++) {
+		s3 += "0";
+	}
+	int c;
+	reverse(s1.begin(), s1.end());
+	reverse(s2.begin(), s2.end());
+	for (int i = 0; i < s1.size(); i++) {
+		int j;
+		c = 0;
+		for (j = 0; j < s2.size(); j++) {
+			int sum = (s1[i] - '0') * (s2[j] - '0') + c + s3[i + j] - '0';
+			s3[i + j] = char(sum % 10 + '0');
+			c = sum / 10;
+		}
+		if (c != 0) s3[i + j] = char(c + '0');
+	}
+
+	while (1) {
+		if (s3[s3.size() - 1] == '0') {
+			s3.erase(s3.size() - 1, 1);
+		}
+		else {
+			break;
+		}
+	}
+	reverse(s3.begin(), s3.end());
+	if (s3 == "") return "0";
+	else return s3;
+}
+std::string gjdj(std::string s1, std::string s2) {
+	std::string s3 = "";
+	int c = 0;
+	if (s1.size() < s2.size()) swap(s1, s2);
+	reverse(s1.begin(), s1.end());
+	reverse(s2.begin(), s2.end());
+	for (int i = 0; i < s1.size(); i++) {
+		int sum = s1[i] + (i < s2.size() ? s2[i] : '0') - 96 + c;
+		s3.push_back(char(sum % 10 + 48));
+		c = sum / 10;
+	}
+	if (c) s3.push_back(char(c + '0'));
+	reverse(s3.begin(), s3.end());
+	return s3;
+}
+std::string gjdjj(std::string s1, std::string s2) {
+	if (s1 == s2) {
+		return "0";
+	}
+	bool flag = false;
+	if (s1 < s2 && s1.size() <= s2.size()) {
+		swap(s1, s2);
+		flag = true;
+	}
+	std::string s3 = "";
+	int c = 0;
+	reverse(s1.begin(), s1.end());
+	reverse(s2.begin(), s2.end());
+	for (int i = 0; i < s1.size(); i++) {
+		if (s1[i] >= (i < s2.size() ? s2[i] : '0') + c) {
+			s3.push_back(char(s1[i] - (i < s2.size() ? s2[i] : '0') - c + '0'));
+			c = 0;
+		}
+		else {
+			s3.push_back(char(s1[i] - (i < s2.size() ? s2[i] : '0') + 10 - c + '0'));
+			c = 1;
+		}
+	}
+	while (1) {
+		if (s3[s3.size() - 1] == '0') {
+			s3.erase(s3.size() - 1, 1);
+		}
+		else {
+			break;
+		}
+	}
+	if (flag) s3.push_back('-');
+	reverse(s3.begin(), s3.end());
+	return s3;
+}

@@ -33,5 +33,8 @@ TOOL_DLL void print(long long x);
 TOOL_DLL void print(double x);
 TOOL_DLL void print(char x);
 TOOL_DLL void print(std::string x);
+TOOL_DLL std::string gjdc(std::string s1, std::string s2);
+TOOL_DLL std::string gjdj(std::string s1, std::string s2);
+TOOL_DLL std::string gjdjj(std::string s1, std::string s2);
 
 #endif
