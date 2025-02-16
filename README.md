@@ -1,50 +1,50 @@
 # tool_DLL
-Chinese\n
-这个是我的第一个TOOL_DLL工具\n
-里面包括:\n
-    int len(std::string x);\n
-    int len(int arr[]);\n
-    void sc(int n, int a[]);\n
-    int cwfgg(int a);\n
-    int pdss(int s);\n
-    int hw(int a);\n
-    int add(int x, int y);\n
-    int reauce(int x, int y);\n
-    double add(double x, double y);\n
-    std::string add(std::string x, std::string y);\n
-    double reauce(double x, double y);\n
-    void print(int x);\n
-    void print(float x);\n
-    void print(short x);\n
-    void print(long long x);\n
-    void print(double x);\n
-    void print(char x);\n
-    void print(std::string x);\n
-    std::string gjdc(std::string s1, std::string s2);\n
-    std::string gjdj(std::string s1, std::string s2);\n
-    std::string gjdjj(std::string s1, std::string s2);
-
-English\n
-This is my first TOOL_DLL tool\n
-It includes:\n
-    int len(std::string x);\n
-    int len(int arr[]);\n
-    void sc(int n, int a[]);\n
-    int cwfgg(int a);\n
-    int pdss(int s);\n
-    int hw(int a);\n
-    int add(int x, int y);\n
-    int reauce(int x, int y);\n
-    double add(double x, double y);\n
-    std::string add(std::string x, std::string y);\n
-    double reauce(double x, double y);\n
-    void print(int x);\n
-    void print(float x);\n
-    void print(short x);\n
-    void print(long long x);\n
-    void print(double x);\n
-    void print(char x);\n
-    void print(std::string x);\n
-    std::string gjdc(std::string s1, std::string s2);\n
-    std::string gjdj(std::string s1, std::string s2);\n
+中文<br>
+这个是我的第一个TOOL_DLL工具<br>
+里面包括:<br>
+    int len(std::string x);<br>
+    int len(int arr[]);<br>
+    void sc(int n, int a[]);<br>
+    int cwfgg(int a);<br>
+    int pdss(int s);<br>
+    int hw(int a);<br>
+    int add(int x, int y);<br>
+    int reauce(int x, int y);<br>
+    double add(double x, double y);<br>
+    std::string add(std::string x, std::string y);<br>
+    double reauce(double x, double y);<br>
+    void print(int x);<br>
+    void print(float x);<br>
+    void print(short x);<br>
+    void print(long long x);<br>
+    void print(double x);<br>
+    void print(char x);<br>
+    void print(std::string x);<br>
+    std::string gjdc(std::string s1, std::string s2);<br>
+    std::string gjdj(std::string s1, std::string s2);<br>
+    std::string gjdjj(std::string s1, std::string s2);<br>
+<br>
+英文<br>
+This is my first TOOL_DLL tool<br>
+It includes:<br>
+    int len(std::string x);<br>
+    int len(int arr[]);<br>
+    void sc(int n, int a[]);<br>
+    int cwfgg(int a);<br>
+    int pdss(int s);<br>
+    int hw(int a);<br>
+    int add(int x, int y);<br>
+    int reauce(int x, int y);<br>
+    double add(double x, double y);<br>
+    std::string add(std::string x, std::string y);<br>
+    double reauce(double x, double y);<br>
+    void print(int x);<br>
+    void print(float x);<br>
+    void print(short x);<br>
+    void print(long long x);<br>
+    void print(double x);<br>
+    void print(char x);<br>
+    void print(std::string x);<br>
+    std::string gjdc(std::string s1, std::string s2);<br>
+    std::string gjdj(std::string s1, std::string s2);<br>
     std::string gjdjj(std::string s1, std::string s2);
