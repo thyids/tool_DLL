@@ -169,3 +169,18 @@ std::string gjdjj(std::string s1, std::string s2) {
 	reverse(s3.begin(), s3.end());
 	return s3;
 }
+int jz_to(int k,string a){
+	reverse(a.begin(),a.end());
+	int res=0;
+	for(int i=0;i<a.size();i++){
+		int s;
+		if(a[i]>='A'){
+			s = a[i]-'A'+10;
+		}else{
+			s=a[i]-'0';
+		}
+		int a = pow(k,i)*s;
+		res+=a;
+	}
+	return res;
+}	
