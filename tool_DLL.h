@@ -4,16 +4,16 @@
 #ifndef TOOL_DLL_d
 #define TOOL_DLL_d
 
-//ºê¶¨Òåµ¼³ö
-#ifdef TOOL_DLL__//Èç¹ûÃ»ÓĞ¶¨ÒåDLLH ¾Í¶¨Òå DLLH __declspec(dllexport)
-#define TOOL_DLL __declspec(dllexport)//µ¼³ö
+//å®å®šä¹‰å¯¼å‡º
+#ifdef TOOL_DLL__//å¦‚æœæ²¡æœ‰å®šä¹‰DLLH å°±å®šä¹‰ DLLH __declspec(dllexport)
+#define TOOL_DLL __declspec(dllexport)//å¯¼å‡º
 #else
-#define TOOL_DLL __declspec(dllimport)//µ¼Èë
-#endif // DLLH__//Èç¹ûÃ»ÓĞ¶¨ÒåDLLH ¾Í¶¨Òå DLLH 
+#define TOOL_DLL __declspec(dllimport)//å¯¼å…¥
+#endif // DLLH__//å¦‚æœæ²¡æœ‰å®šä¹‰DLLH å°±å®šä¹‰ DLLH 
 
-//±àĞ´´úÂëÇøÓò
+//ç¼–å†™ä»£ç åŒºåŸŸ
 
-//µ¼³öº¯Êı
+//å¯¼å‡ºå‡½æ•°
 
 TOOL_DLL int len(std::string x);
 TOOL_DLL int len(int arr[]);
@@ -36,5 +36,6 @@ TOOL_DLL void print(std::string x);
 TOOL_DLL std::string gjdc(std::string s1, std::string s2);
 TOOL_DLL std::string gjdj(std::string s1, std::string s2);
 TOOL_DLL std::string gjdjj(std::string s1, std::string s2);
+TOOL_DLL int jz_to(int k,std::string a);
 
 #endif
